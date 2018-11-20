@@ -1,6 +1,8 @@
-function takeANumber(katzDeliLine, newName){
-  katzDeliLine.push(newName); //add New Customer to End of Array
-  return "Welcome, " + newName +'.' + " You are number " + katzDeliLine.length + " in line.";
+var counter = 0;
+function takeANumber(katzDeliLine){
+  counter++
+  katzDeliLine.push(counter);
+  return "Welcome, " + "You are number " + counter + " in line.";
 }
 
 function nowServing(katzDeliLine){
